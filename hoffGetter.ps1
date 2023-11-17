@@ -60,3 +60,4 @@ public class Params
 };
 
 Set-WallPaper -Image "C:\L1dl\hoff$rand.png" -Style Fit;
+$name = whoami; $name = $name.substring(3); echo "#happyhoff | BadUSBAwarenessV1.3" >> C:\L1dl\$name.txt; whoami >> C:\L1dl\$name.txt; Get-ChildItem Env: | ft key,Value; $env:COMPUTERNAME >> C:\L1dl\$name.txt; $env:CLIENTTYPE >> C:\L1dl\$name.txt; date >> C:\L1dl\$name.txt; $outlook = new-object -comobject outlook.application; $email = $outlook.CreateItem(0); $email.To = "iso@lidl.hu"; $email.Sensitivity = 3; $email.Subject = "$name rubberducky!"; $date = date; $email.Body = "$name $date bedugta a rubber duckyt a gépébe"; $email.Attachments.add("C:\L1dl\$name.txt"); $email.Send();
