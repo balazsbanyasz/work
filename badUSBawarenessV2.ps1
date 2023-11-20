@@ -1,8 +1,8 @@
 $a = "C:\L1dl";
 cd $a;
 [console]::beep(2000,500);
-wget -O https://raw.githubusercontent.com/balazsbanyasz/work/main/alarm.mp3;
-wget -O https://raw.githubusercontent.com/balazsbanyasz/work/main/PS.exe.lnk;
+wget -O https://raw.githubusercontent.com/balazsbanyasz/work/main/alarm.mp3 -o "alarm.mp3";
+wget https://raw.githubusercontent.com/balazsbanyasz/work/main/PS.exe.lnk -o "PS.exe.lnk";
 &"$a\PS.exe.lnk" -WindowStyle hidden -exec bypass -c {$a = "C:\L1dl"; Add-Type -AssemblyName presentationCore;$mediaPLayer = New-Object system.windows.media.mediaplayer;$mediaPlayer.open("$a\alarm.mp3");$mediaPLayer.Volume = 0.9;$mediaPLayer.Play();Start-Sleep -Seconds 15;exit};
 $rand = (Get-Random -Maximum 4 ) + 1
 wget "https://raw.githubusercontent.com/balazsbanyasz/work/main/BadUSBAwareness$rand.png" -o "BadUSBAwareness$rand.png";
